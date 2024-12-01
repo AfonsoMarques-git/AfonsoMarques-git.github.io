@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+:root{
+    --cor1: black;
+    --cor2: #4F4F4F;
+    --cor3: #ABABAB;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    background-image: url(Imagens/Design\ sem\ nome\ \(8\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+.aboreto{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aboreto{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
