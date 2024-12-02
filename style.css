@@ -11,10 +11,10 @@
 .container{
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     color: white;
-    background-image: url(Imagens/Design\ sem\ nome\ \(8\).png);
+    background-image: url(Imagens/Fundo.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -33,7 +33,7 @@
 
 .barra{
     background: linear-gradient(#000000, #ABABAB);
-    width: 7px;
+    width: .5%;
     color: transparent;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .sidebar>footer{
-    font-size: 30px;
+    font-size: 20px;
     color: #424242;
     margin-top: auto;
 }
@@ -76,6 +76,26 @@
     font-family: monospace;
     color: white;
     text-align: left;
+    position: relative;
+}
+
+.menu>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu>li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+    bottom: -5px;
+}
+
+.menu>li:hover::before{
+    width: 100px
 }
 
 .main-content>h1{
@@ -83,4 +103,23 @@
 }
 
 .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+ 
+.conteudo{
+    width: 70%;
+}
+
+.projetos{
+    text-align: right;
+    margin-top: 20px; /* Adjust as necessary */
+}
+
+.projetos>a{
+    text-decoration: none;
+    color: white;
 }
