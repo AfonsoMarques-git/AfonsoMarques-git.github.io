@@ -89,8 +89,9 @@
     color: white;
 }
 
-.menu>li>a{
+.menu > li:first-child a {
     font-size: 30px;
+    color: white;
 }
 
 .menu>li::before{
@@ -103,15 +104,17 @@
     bottom: -5px;
 }
 
+.menu>li:first-child::before{
+    width: 0;
+}
+
+.menu>li:first-child:hover::before{
+    width: 130px;
+}
+
 .menu>li:hover::before{
     width: 100px
 }
-
-.work{
-    font-size: 40px;
-    color: red;
-}
-
 
 .main-content>h1{
     font-size: 120px;
@@ -131,7 +134,7 @@
 
 .projetos{
     text-align: right;
-    margin-top: 20px; /* Adjust as necessary */
+    margin-top: 20px;
 }
 
 .projetos>a{
