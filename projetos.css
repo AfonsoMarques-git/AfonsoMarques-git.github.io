@@ -19,6 +19,17 @@
     background-size: cover;
 }
 
+.titulo>h1>a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+.titulo>p>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 .aboreto{
     font-family: "Aboreto", system-ui;
     font-weight: 400;
@@ -78,6 +89,10 @@
     color: white;
 }
 
+.menu>li>a{
+    font-size: 30px;
+}
+
 .menu>li::before{
     content: "";
     position: absolute;
@@ -91,6 +106,12 @@
 .menu>li:hover::before{
     width: 100px
 }
+
+.work{
+    font-size: 40px;
+    color: red;
+}
+
 
 .main-content>h1{
     font-size: 120px;
