@@ -98,7 +98,18 @@ nav{
 .menu>li:nth-child(2) {
     font-size: 30px;
     color: white;
-    cursor: default;
+    cursor: text;
+    position: relative;
+}
+
+.menu>li:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(#747474, #ffffff);
+    width: 100%;
+    left: 0;
+    bottom: -5px;
 }
 
 .menu>li::before{
@@ -112,10 +123,10 @@ nav{
 }
 
 .menu>li:nth-child(2):before{
-    width: 0px;
+    width: 0;
 }
 
-.menu>li:nth-child(2)::before{
+.menu>li:nth-child(2):hover:before{
     width: 0px;
 }
 

@@ -98,7 +98,8 @@ nav{
 .menu>li:first-child {
     font-size: 30px;
     color: white;
-    cursor: default;
+    cursor: text;
+    position: relative;
 }
 
 .menu>li::before{
@@ -111,6 +112,16 @@ nav{
     bottom: -5px;
 }
 
+.menu>li:first-child::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(#747474, #ffffff);
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+}
+
 .menu>li:first-child::before{
     width: 0;
 }
@@ -120,7 +131,7 @@ nav{
 }
 
 .menu>li:hover::before{
-    width: 100px
+    width: 100px;
 }
 
 .main-content>h1{
