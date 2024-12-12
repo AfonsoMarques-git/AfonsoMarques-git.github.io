@@ -1,0 +1,150 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+:root{
+    --cor1: black;
+    --cor2: #4F4F4F;
+    --cor3: #ABABAB;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-image: url(Imagens/Fundo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo>h1>a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+.titulo>p>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.aboreto{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barra{
+    background: linear-gradient(#000000, #ABABAB);
+    width: .5%;
+    color: transparent;
+}
+
+.sidebar{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+}
+
+.sidebar>footer{
+    font-size: 20px;
+    color: #424242;
+    margin-top: auto;
+}
+
+.sidebar>h1{
+    font-size: 40px;
+    display: block;
+}
+
+.sidebar>p{
+    font-size: 20px;
+}
+
+nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu>li{
+    font-size: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.menu>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu>li:nth-child(3) {
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+
+.menu>li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+    bottom: -5px;
+}
+
+.menu>li:nth-child(3):before{
+    width: 0px;
+}
+
+.menu>li:nth-child(3)::before{
+    width: 0px;
+}
+
+.menu>li:hover::before{
+    width: 100px
+}
+
+.main-content>h1{
+    font-size: 120px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+ 
+.conteudo{
+    width: 70%;
+}
+
+.btn_projetos{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn_projetos>a{
+    text-decoration: none;
+    color: white;
+}
