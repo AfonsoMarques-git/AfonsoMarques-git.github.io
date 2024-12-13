@@ -56,6 +56,11 @@
     margin-top: auto;
 }
 
+.sidebar>footer>a{
+    text-decoration: none;
+    color: #424242;
+}
+
 .sidebar>h1{
     font-size: 40px;
     display: block;
@@ -134,18 +139,22 @@ nav{
     width: 100px;
 }
 
-.main-content>h1{
+.main-content>.caixa_content>h1{
     font-size: 120px;
 }
 
 .main-content{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10%;
-    margin-left: 20%;
 }
- 
+
+.caixa_content{
+    align-self: center;
+    width: 50%;
+}
+
 .conteudo{
     width: 70%;
 }
