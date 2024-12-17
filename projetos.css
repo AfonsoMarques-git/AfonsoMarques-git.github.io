@@ -1,7 +1,6 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
-
 :root{
     --cor1: black;
     --cor2: #4F4F4F;
@@ -43,11 +42,11 @@
 }
 
 .sidebar{
-    margin: 40px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 80px);
+    height: 100vh;
 }
 
 .sidebar>footer{
@@ -147,6 +146,8 @@ nav{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .caixa_content{
@@ -157,10 +158,51 @@ nav{
 }
 
 .conteudo{
-    flex-grow: 0.7;
+    flex-grow: 0.4;
 }
 
-.projetos>img{
-    width: 300px;
+.caixa_content>a>img{
+    width: 100px;
+}
+
+.igreja{
     padding-top: 70px;
+}
+
+.igreja>a>img{
+    width: 400px;
+    padding-top: 10px;
+}
+
+.igreja>a{
+    text-decoration: none;
+    color: white;
+}
+
+.joias{
+    padding-top: 70px;
+}
+
+.joias>a{
+    text-decoration: none;
+    color: white;
+}
+
+.joias>a>img{
+    padding-top: 10px;
+    width: 400px;
+}
+
+.psi{
+    padding-top: 70px;
+}
+
+.psi>a{
+    text-decoration: none;
+    color: white;
+}
+
+.psi>a>img{
+    padding-top: 10px;
+    width: 400px;
 }

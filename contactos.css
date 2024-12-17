@@ -132,32 +132,70 @@ nav{
     width: 100px
 }
 
-.main-content>.caixa_content>h1{
-    font-size: 120px;
+.main-content>.caixa_content>.conteudo>h1{
+    font-size: 60px;
 }
 
 .main-content{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
- 
-.caixa_content{
-    align-self: center;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 50%;
 }
 
+.caixa_content{
+    display: flex;
+    align-self: left;
+    padding: 70px;
+    width: 70vw;
+}
+
 .conteudo{
-    width: 70%;
+    width: 100%;
+    padding-left: 100px;
 }
 
-.btn_projetos{
-    text-align: right;
-    margin-top: 20px;
+.formulario{
+    padding-top: 100px;
 }
 
-.btn_projetos>a{
-    text-decoration: none;
+.formulario>p{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.formulario>input{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.formulario>.nome{
+    width: 400px;
+    height: 30px;
+}
+
+.formulario>.email{
+    width: 400px;
+    height: 30px;
+}
+
+.formulario>.assunto{
+    height: 200px;
+    width: 400px;
+}
+
+.formulario>a>.submeter{
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.formulario>a>.submeter:hover{
+    background-color: black;
     color: white;
+    transition: 0.2s;
 }
