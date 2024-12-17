@@ -136,10 +136,12 @@ nav{
 
 .projetos{
     text-align: right;
-    margin-top: 20px; /* Adjust as necessary */
+    padding-top: 20px;
 }
 
 .projetos>a{
     text-decoration: none;
     color: white;
 }
+
+/* COMITT FINAL PARA AVALIAÇÃO */
