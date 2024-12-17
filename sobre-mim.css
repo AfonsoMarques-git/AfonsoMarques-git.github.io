@@ -150,6 +150,7 @@ nav{
     height: 100vh;
     overflow-y: auto;
     width: 50%;
+    overflow-x: hidden;
 }
 
 .caixa_content{
@@ -160,7 +161,7 @@ nav{
 }
 
 .conteudo{
-    width: 30%;
+    flex-grow: 1;
 }
 
 .conteudo>img{
